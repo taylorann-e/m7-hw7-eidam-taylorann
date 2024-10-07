@@ -82,7 +82,7 @@ main > section.hero {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 1000; /* This ensures it stays on top */
+  z-index: 1000;
   /* make this banner stick to the top! */
 }
 
@@ -155,5 +155,12 @@ span.tooltip span {
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+}
+article p:first-of-type::first-letter {
+  font-size: 3rem; 
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 0.1em;
 }
 
