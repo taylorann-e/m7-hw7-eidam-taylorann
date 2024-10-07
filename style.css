@@ -144,17 +144,39 @@ span.tooltip:focus {
 /* show tooltip on hover/focus */
 span.tooltip:hover > span,
 span.tooltip:focus > span {
-  display: inline;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent; 
 }
 article p:first-of-type::first-letter {
   font-size: 3rem; 
