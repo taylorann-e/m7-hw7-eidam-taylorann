@@ -92,9 +92,6 @@ section.hero > .call-to-action {
 }
 
 section.hero > button {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   background-color: var(--secondary-color);
   border: none;
   padding: 12px 24px;
@@ -155,4 +152,9 @@ span.tooltip span {
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+}
+.hero {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* This ensures it stays on top */
 }
