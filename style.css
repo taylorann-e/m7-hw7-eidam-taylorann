@@ -80,6 +80,9 @@ main > section.hero {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* This ensures it stays on top */
   /* make this banner stick to the top! */
 }
 
@@ -153,8 +156,4 @@ span.tooltip span {
 span.tooltip span::after {
   content: "";
 }
-.hero {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* This ensures it stays on top */
-}
+
